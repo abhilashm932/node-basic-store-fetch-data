@@ -7,7 +7,7 @@ MongoClient.connect('mongodb://localhost:27017/todo',(err,db) =>{
 
     console.log('connected to database successfully');
 
-    db.collection('todoapp').find({name: 'raj'}).toArray().then((dosc) => {
+    db.collection('todolist').find({name: 'raj'}).toArray().then((dosc) => {
         console.log('the list of data');
         console.log(dosc);
     },(err) => {
@@ -16,5 +16,4 @@ MongoClient.connect('mongodb://localhost:27017/todo',(err,db) =>{
 
 })
 
-
-'mongodb://localhost:27017/todo'
+// 59eb2f458906a51190123d09

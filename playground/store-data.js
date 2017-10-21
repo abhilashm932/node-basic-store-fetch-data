@@ -8,7 +8,8 @@ MongoClient.connect('mongodb://localhost:27017/todo',(err,db) => {
     console.log('connected with the database');
 
     db.collection('todolist').insertOne({
-        text: 'some text',
+        text: 'abhilash',
+        age:24,
         compleated:false
     },(err, result) =>{
         if(err){
